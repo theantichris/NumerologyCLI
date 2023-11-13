@@ -1,7 +1,16 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+let values:[String] = [
+  "AJS",
+  "BKT",
+  "CLU",
+  "DMV",
+  "ENW",
+  "FOX",
+  "GPY",
+  "HQZ",
+  "IR"
+]
 
-print("Hello, world!")
+print("Enter the words you want to calculate.\n")
 
-let response = readLine()
-print(String(describing: response))
+var response = ""
+response = readLine()!.uppercased()
