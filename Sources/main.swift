@@ -12,39 +12,44 @@ let groups:[String] = [
 
 // TODO: print("Enter the words you want to calculate.\n")
 
-var response = "Christopher"
+var input = "Christopher"
 
-// TODO: response = readLine()
+// TODO: input = readLine()
 // TODO: strip out or show error for anything that isn't a letter.
 
-response = response.uppercased()
+input = input.uppercased()
 
-var value = getInitialValue(of: response)
+var value = calculateNumerogicalValue(of: input)
 
-// TODO: Loop over value until we get a single digit number.
-while value > 9 {
-    let digits = getDigits(of: value)
-    value = 0 // Resetting the value to 0 for the new calculation.
+func calculateNumerogicalValue(of input: String) -> Int {
+    var value = getInitialValue(of: input)
     
-    for digit in digits {
-        value += digit
+    while value > 9 {
+        let digits = getDigits(of: value)
+        value = 0 // Resetting the value to 0 for the new calculation.
+        
+        for digit in digits {
+            value += digit
+        }
     }
+    
+    return value
 }
 
-func getInitialValue(of response: String) -> Int {
-    var calculation = 0
+func getInitialValue(of input: String) -> Int {
+    var value = 0
     
-    for letter in response {
+    for letter in input {
         for i in 1 ... groups.count {
             let index = i - 1
             
             if groups[index].contains(letter) {
-                calculation += i
+                value += i
             }
         }
     }
     
-    return calculation
+    return value
 }
 
 func getDigits(of number: Int) -> [Int] {
