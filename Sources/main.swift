@@ -10,11 +10,10 @@ let groups:[String] = [
   "IR"
 ]
 
-// TODO: print("Enter the words you want to calculate.\n")
+var input = ""
+print("Enter the words you want to calculate: ")
+input = readLine()!
 
-var input = "Christopher"
-
-// TODO: input = readLine()
 // TODO: strip out or show error for anything that isn't a letter.
 
 input = input.uppercased()
