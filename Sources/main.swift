@@ -10,12 +10,8 @@ let groups:[String] = [
   "IR"
 ]
 
-var input = ""
 print("Enter the words you want to calculate: ")
-input = readLine()!
-
-// TODO: strip out or show error for anything that isn't a letter.
-
+var input = readLine()!
 input = input.uppercased()
 
 var value = calculateNumerogicalValue(of: input)
@@ -63,4 +59,4 @@ func getDigits(of number: Int) -> [Int] {
     return digits
 }
 
-print("The numerogical value is \(value).")
+print("The numerological value is \(value).")
