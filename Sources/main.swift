@@ -20,6 +20,10 @@ func calculateNumerogicalValue(of input: String) -> Int {
     var value = getInitialValue(of: input)
     
     while value > 9 {
+        if value == 11 || value == 22 {
+            return value
+        }
+        
         let digits = getDigits(of: value)
         value = 0 // Resetting the value to 0 for the new calculation.
         
