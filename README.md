@@ -6,7 +6,7 @@ A CLI application that calculates the numerology of words entered by the user.
 
 These are the values used to calculate the numerology of words.
 
-```
+```txt
 1 2 3 4 5 6 7 8 9
 A B C D E F G H I
 J K L M N O P Q R
@@ -32,3 +32,8 @@ Enter the words you want to calculate:
 christopher1
 The numerological value is 4.
 ```
+
+## TODOs
+
+* Add support for dates.
+* Display numerological meanings.
