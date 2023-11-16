@@ -10,6 +10,8 @@ let groups:[String] = [
   "IR"
 ]
 
+let masterNumbers = [11, 22]
+
 print("Enter the words you want to calculate: ")
 var input = readLine()!
 input = input.uppercased()
@@ -20,7 +22,7 @@ func calculateNumerogicalValue(of input: String) -> Int {
     var value = getInitialValue(of: input)
     
     while value > 9 {
-        if value == 11 || value == 22 {
+        if masterNumbers.contains(value) {
             return value
         }
         
