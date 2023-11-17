@@ -13,7 +13,8 @@ let groups:[String] = [
 let masterNumbers = [11, 22]
 
 let meanings:[String] = [
-    "The number 1 carries strong masculine energies. People with a numerological category of 1 tend to be leaders. They are often resilient, creative, impassioned, independent, prefer action and practical solutions, perfectionists, visionaries, popular, honest, and fair. People with this number can sometimes be overly demanding or critical of others. They might not show it but sometimes struggle with feelings of self doubt."
+    "The number 1 carries strong masculine energies. People with a numerological category of 1 tend to be leaders. They are often resilient, creative, impassioned, independent, prefer action and practical solutions, perfectionists, visionaries, popular, honest, and fair. People with this number can sometimes be overly demanding or critical of others. They might not show it but sometimes struggle with feelings of self doubt.",
+    "The number 2 carries feminine energy. People with this number are often diplomatic and attuned to the emotions of others. They can be highly influential and persuasive. Number 2s are great for their ability to listen and communication as well as their interest in the deepest issues in life. They can sometimes be overly sensitive."
 ]
 
 print("Enter the words you want to calculate: ")
