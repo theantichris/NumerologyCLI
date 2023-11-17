@@ -36,4 +36,4 @@ The numerological value is 4.
 ## TODOs
 
 * Add support for dates.
-* Display numerological meanings.
+* WIP: Display numerological meanings.
